@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Велосипеды на любой вкус">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="image/png" rel="icon" href="img/icon-bike.svg">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+    //По руководству автора - http://scottjehl.github.io/picturefill/
+  </script>
+  <title>Велосипеды</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <div class="bikes tabs">
+      <div class="bikes__tabs tabs__desk">
+        <h2 tabindex="1">Горный велосипед</h2>
+        <h2 tabindex="1">Женский велосипед</h2>
+      </div>
+      <div class="bikes__bike tabs__tab">
+        <h2 tabindex="1">Горный велосипед</h2>
+        <div class="bikes__inner tabs__info">
+          <header>
+            <picture>
+              <source type="image/webp" srcset="img/bike-1.webp 1x, img/bike-1@2x.webp 2x">
+            
+              <img src="img/bike-1.png" srcset="img/bike-1@2x.png 2x" width="358" height="232" alt="Горный велосипед">
+            </picture>
+            <div>
+              <h1>Велосипед STELS Navigator 510 HD 26 2022</h1>
+              <p>
+                Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. 
+                Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.
+              </p>
+              <p>
+                Суммарный вес велосипеда был снижен до 16,9 кг, 
+                так как рама была изготовлена с учетом использования велосипеда подростками.
+              </p>
+            </div>
+          </header>
+          <div>
+            <h3>Характеристики</h3>
+            <ol class="list">
+              <li>Двойной обод</li>
+              <li>Алюминиевый сплав</li>
+              <li>Колеса диаметром 26 дюймов</li>
+              <li>Покрышки 26х1,95"</li>
+            </ol>
+          </div>
+          <div class="bikes__add">
+            <h3>Добавить характеристику</h3>
+            <div>
+              <input type="text" placeholder="Алюминиевый сплав" id="feature" name="feature">
+              <label for="feature" class="visually-hidden">Характеристика</label>
+              <button class="button" type="button">Добавить</button>
+            </div>
+          </div>
+          <div class="bikes__buttons">
+            <button class="button" type="button">Окей</button>
+            <button class="button button--white" type="button">Отмена</button>
+          </div>
+        </div>
+      </div>
+      <div class="bikes__bike tabs__tab">
+        <h2 tabindex="1">Женский велосипед</h2>
+        <div class="bikes__inner tabs__info">
+          <header>
+            <picture>
+              <source type="image/webp" srcset="img/bike-2.webp 1x, img/bike-2@2x.webp 2x">
+            
+              <img src="img/bike-2.png" srcset="img/bike-2@2x.png 2x" width="358" height="232" alt="Женский велосипед">
+            </picture>
+            <div>
+              <h1>Велосипед SCHWINN Traveler women 2022</h1>
+              <p>
+                Женский велосипед со стальной рамой Classic step-true lightweight 
+                позволяет девушкам без проблем его перемещать.
+              </p>
+              <p>
+                На данном велосипеде имеется 7 скоростей с переключателями от Shimano, 
+                а жесткая вилка обеспечивает отличную управляемость. 
+                Подходит для катания по асфальтированным поверхностям.
+              </p>
+            </div>
+          </header>
+          <div>
+            <h3>Характеристики</h3>
+            <ul class="list">
+              <li>Стальная рама</li>
+              <li>Жесткая вилка</li>
+              <li>Колеса диаметром 24 дюймов</li>
+              <li>7 скоростей</li>
+            </ul>
+          </div>
+          <div class="bikes__add">
+            <h3>Добавить характеристику</h3>
+            <div>
+              <input type="text" placeholder="Алюминиевый сплав" id="feature-1" name="feature">
+              <label for="feature-1" class="visually-hidden">Характеристика</label>
+              <button class="button" type="button">Добавить</button>
+            </div>
+          </div>
+          <div class="bikes__buttons">
+            <button class="button" type="button">Окей</button>
+            <button class="button button--white" type="button">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
