@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Сайт Лига Банка">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/robotoregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotomedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotobold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement( "picture" );
+    //По руководству автора - http://scottjehl.github.io/picturefill/
+  </script>
+  <title>LigaBank</title>
+</head>
+  <body class="body">
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="visually-hidden">Лига Банк</h1>
+        <header class="header">
+          <button class="icon-button icon-button--burger">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a class="header__logo">
+            <img src="img/Logo.svg" width="152" height="28" alt="Логотип">
+          </a>
+          <nav class="header__nav">
+            <ul class="list header__list">
+              <li class="list__item header__list-item">
+                <a class="list__item-link header__list-item-link" href="#services">Услуги</a>
+              </li>
+              <li class="list__item header__list-item">
+                <a class="list__item-link header__list-item-link" href="#calculator">Рассчитать кредит</a>
+              </li>
+              <li class="list__item header__list-item">
+                <a class="list__item-link header__list-item-link" href="#">Контакты</a>
+              </li>
+              <li class="list__item header__list-item">
+                <a class="list__item-link header__list-item-link" href="#">Задать вопрос</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__login">
+            <svg width="20" height="22" viewBox="0 0 20 22">
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <span class="header__login-link">Войти в Интернет-банк</span>
+          </a>
+        </header>
+        <section class="slider swiper-container">
+          <ul class="list slider__list swiper-wrapper">
+            <li class="list__item slider__list-item slider__list-item--initial swiper-slide">
+              <div class="slider__initial-wrapper">
+                <h2>Лига Банк</h2>
+                <p>Кредиты на любой случай</p>
+                <a href="#calculator" class="button button--white list__item-link slider__list-item-link">Рассчитать кредит</a>
+              </div>
+              <div class="slider__cards">
+                <div class="slider__cards-wrapper slider__cards-wrapper--black">
+                  <picture>
+                    <source type="image/webp" srcset="img/black-card@1x.webp 1x, img/black-card@2x.webp 2x">
+
+                    <img src="img/black-card@1x.png" srcset="img/black-card@2x.png 2x" width="335" height="228" alt="Дебетовая карта. Черная">
+                  </picture>
+                </div>
+                <div class="slider__cards-wrapper slider__cards-wrapper--white">
+                  <picture>
+                    <source type="image/webp" srcset="img/white-card@1x.webp 1x, img/white-card@2x.webp 2x">
+
+                    <img src="img/white-card@1x.png" srcset="img/white-card@2x.png 2x" width="335" height="228" alt="Дебетовая карта. Белая">
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="list__item slider__list-item swiper-slide">
+              <h2>Лига Банк</h2>
+              <p>Ваша уверенность в завтрашнем дне</p>
+              <picture>
+                <source type="image/webp" srcset="img/first-slide-bg@1x.webp 1x, img/first-slide-bg@2x.webp 2x">
+
+                <img src="img/first-slide-bg@1x.png" srcset="img/first-slide-bg@2x.png 2x" width="1366" height="400" alt="Уверенность">
+              </picture>
+            </li>
+            <li class="list__item slider__list-item slider__list-item--divisions swiper-slide">
+              <h2>Лига Банк</h2>
+              <p>Всегда рядом</p>
+              <a href="#divisions" class="button list__item-link slider__list-item-link">Найти отделение</a>
+              <picture>
+                <source type="image/webp" srcset="img/second-slide-bg@1x.webp 1x, img/second-slide-bg@2x.webp 2x">
+
+                <img src="img/second-slide-bg@1x.png" srcset="img/second-slide-bg@2x.png 2x" width="1366" height="400" alt="Всегда рядом">
+              </picture>
+            </li>
+          </ul>
+          <div class="slider__pagination swiper-pagination"></div>
+        </section>
+        <main class="main">
+          <section class="services swiper-container-services" id="services">
+            <ul class="list services__list">
+              <li class="list__item services__list-item services__list-item--active">
+                <a class="list__item-link services__list-item-link services__list-item-link--savings" href="#">Вклады</a>
+              </li>
+              <li class="list__item services__list-item">
+                <a class="list__item-link services__list-item-link services__list-item-link--credits" href="#">Кредиты</a>
+              </li>
+              <li class="list__item services__list-item">
+                <a class="list__item-link services__list-item-link services__list-item-link--insurance" href="#">Страхование</a>
+              </li>
+              <li class="list__item services__list-item">
+                <a class="list__item-link services__list-item-link services__list-item-link--online" href="#">Онлайн - сервисы</a>
+              </li>
+            </ul>
+            <ul class="list services__second-list swiper-wrapper">
+              <li class="list__item services__second-list-item services__second-list-item--piggy swiper-slide">
+                <div class="services__second-list-item-wrapper">
+                  <h3>Вклады Лига Банка – это выгодная инвестиция в свое будущее</h3>
+                  <ul class="list services__sublist">
+                    <li class="list__item services__sublist-item">Проценты по вкладам до 7%</li>
+                    <li class="list__item services__sublist-item">Разнообразные условия</li>
+                    <li class="list__item services__sublist-item">
+                      Возможность ежемесячной капитализации или вывод процентов на банковскую карту
+                    </li>
+                  </ul>
+                  <a href="#" class="button services__sublist-button">Узнать подробнее</a>
+                </div>
+                <div class="services__image-wrapper services__image-wrapper--piggy">
+                  <picture>
+                    <source type="image/webp" srcset="img/piggybank@1x.webp 1x, img/piggybank@2x.webp 2x">
+
+                    <img src="img/piggybank@1x.png" srcset="img/piggybank@2x.png 2x" width="440" height="290" alt="Копилка">
+                  </picture>
+                </div>
+              </li>
+              <li class="list__item services__second-list-item services__second-list-item--car swiper-slide">
+                <div class="services__second-list-item-wrapper">
+                  <h3>Лига Банк выдает кредиты под любые цели</h3>
+                  <ul class="list services__sublist">
+                    <li class="list__item services__sublist-item">Ипотечный кредит</li>
+                    <li class="list__item services__sublist-item">Автокредит</li>
+                    <li class="list__item services__sublist-item">Потребительский кредит</li>
+                  </ul>
+                  <p>
+                    Рассчитайте ежемесячный платеж и ставку по кредиту воспользовавшись
+                    нашим <a href="#">кредитным калькулятором</a>
+                  </p>
+                </div>
+                <div class="services__image-wrapper services__image-wrapper--car">
+                  <picture>
+                    <source type="image/webp" srcset="img/car@1x.webp 1x, img/car@2x.webp 2x">
+
+                    <img src="img/car@1x.png" srcset="img/car@2x.png 2x" width="440" height="290" alt="Автомобиль">
+                  </picture>
+                </div>
+              </li>
+              <li class="list__item services__second-list-item services__second-list-item--lock swiper-slide">
+                <div class="services__second-list-item-wrapper">
+                  <h3>Лига Страхование — застрахуем все что захотите</h3>
+                  <ul class="list services__sublist">
+                    <li class="list__item services__sublist-item">Автомобильное страхование</li>
+                    <li class="list__item services__sublist-item">Страхование жизни и здоровья</li>
+                    <li class="list__item services__sublist-item">Страхование недвижимости</li>
+                  </ul>
+                  <a href="#" class="button services__sublist-button">Узнать подробнее</a>
+                </div>
+                <div class="services__image-wrapper services__image-wrapper--lock">
+                  <picture>
+                    <source type="image/webp" srcset="img/lock@1x.webp 1x, img/lock@2x.webp 2x">
+
+                    <img src="img/lock@1x.png" srcset="img/lock@2x.png 2x" width="440" height="290" alt="Замок">
+                  </picture>
+                </div>
+              </li>
+              <li class="list__item services__second-list-item services__second-list-item--phone swiper-slide">
+                <div class="services__second-list-item-wrapper">
+                  <h3>Лига Банк — это огромное количество онлайн-сервисов для вашего удобства</h3>
+                  <ul class="list services__sublist">
+                    <li class="list__item services__sublist-item">Мобильный банк, который всегда под рукой</li>
+                    <li class="list__item services__sublist-item">Приложение Лига-проездной позволит вам оплачивать билеты по всему миру</li>
+                  </ul>
+                  <a href="#" class="button services__sublist-button">Узнать подробнее</a>
+                </div>
+                <div class="services__image-wrapper services__image-wrapper--phone">
+                  <picture>
+                    <source type="image/webp" srcset="img/cellphone@1x.webp 1x, img/cellphone@2x.webp 2x">
+
+                    <img src="img/cellphone@1x.png" srcset="img/cellphone@2x.png 2x" width="440" height="290" alt="Смартфон">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <div class="services__pagination swiper-pagination"></div>
+          </section>
+          <form class="form" id="calculator" method="post" action="index.html">
+            <h2>Кредитный калькулятор</h2>
+            <div class="form__wrapper">
+              <div class="form__wrapper-second">
+                <div class="form__first-step">
+                  <h3>Шаг 1. Цель кредита</h3>
+                  <label for="credit-type" class="visually-hidden">Выберите тип кредита</label>
+                  <select name="select" id="credit-type">
+                    <option value="non-selected">Выберите цель кредита</option>
+                    <option value="mortgage">Ипотечное кредитование</option>
+                    <option value="carloan">Автомобильное кредитование</option>
+                    <option value="consumercredit">Потребительский кредит</option>
+                  </select>
+                </div>
+                <div class="form__second-step visually-hidden">
+                  <h3>Шаг 2. Введите параметры кредита</h3>
+                  <div class="form__price-wrapper">
+                    <label for="property-price">Стоимость недвижимости</label>
+                    <div class="form__price-wrapper-second">
+                      <button type="button" class="form__minus-button">
+                        <span class="visually-hidden">Минус</span>
+                      </button>
+                      <input type="text" value="2 500 000 рублей" name="price" id="property-price" minlength="16" maxlength="17" data-min="1200000" data-max="25000000" data-step="100 000" data-mask="0[0] 000 000 {рублей}" data-input-mask="00000000 {рублей}" data-error-mask="Некорректное значение" required="">
+                      <button type="button" class="form__plus-button">
+                        <span class="visually-hidden">Плюс</span>
+                      </button>
+                    </div>
+                    <span class="limits">От 1 200 000 до 25 000 000 рублей</span>
+                  </div>
+                  <div class="form__initial-payment-wrapper range">
+                    <label for="initial-payment">Первоначальный взнос</label>
+                    <input type="text" value="0" name="initial-pay" id="initial-payment" data-min="0" data-mask="[0]000000 {рублей}" data-input-mask="000000[0] {рублей}" required="">
+                    <label for="initial-percent" class="visually-hidden">Процент от суммы кредита</label>
+                    <input type="range" name="initial-percent" id="initial-percent" data-min="10" data-max="100" data-step="5" list="marks" value="10">
+                    <datalist id="marks">
+                      <option value="10" label="10%">
+                    </option></datalist>
+                  </div>
+                  <div class="form__year-wrapper range">
+                    <label for="years">Срок кредитования</label>
+                    <input type="text" value="5 лет" name="years" id="years" data-min="5" data-max="30" required="">
+                    <label for="years-range" class="visually-hidden">Срок кредитования. Ползунок</label>
+                    <input type="range" name="years-range" id="years-range" min="5" max="30" step="1" list="yearsmarks" value="5" data-min="5 лет" data-max="30 лет">
+                    <datalist id="yearsmarks">
+                      <option value="5" label="5 лет">
+                      </option><option value="30" label="30 лет">
+                    </option></datalist>
+                  </div>
+                  <div class="form__checkbox-wrapper checkbox">
+                    <input type="checkbox" name="mother-money" id="mother-money" value="mother-money" checked="">
+                    <label for="mother-money">Использовать материнский капитал</label>
+                  </div>
+                  <ul class="checkboxes-text visually-hidden">
+                    <li class="checkboxes-text__mortgage">Использовать материнский капитал</li>
+                    <li class="checkboxes-text__car-insurance">Оформить КАСКО в нашем банке</li>
+                    <li class="checkboxes-text__life-insurance">Оформить Страхование жизни в нашем банке</li>
+                    <li class="checkboxes-text__salary-project">Участник зарплатного проекта нашего банка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__offer visually-hidden">
+                <h3>Наше предложение</h3>
+                <div class="form__offer-wrapper-outer">
+                  <div class="form__offer-wrapper form__offer-wrapper--sum">
+                    <h4>1 330 000 рублей</h4>
+                    <span>Сумма ипотеки</span>
+                  </div>
+                  <div class="form__offer-wrapper form__offer-wrapper--percent">
+                    <h4>9,40%</h4>
+                    <span>Процентная ставка</span>
+                  </div>
+                  <div class="form__offer-wrapper form__offer-wrapper--monthly">
+                    <h4>27 868 рублей</h4>
+                    <span>Ежемесячный платеж</span>
+                  </div>
+                  <div class="form__offer-wrapper form__offer-wrapper--need">
+                    <h4>61 929 рублей</h4>
+                    <span>Необходимый доход</span>
+                  </div>
+                </div>
+                <button class="button button--make-request">Оформить заявку</button>
+              </div>
+              <div class="non-less visually-hidden">
+                <h2>Наш банк не выдаёт ипотечные кредиты меньше 200 000 рублей.</h2>
+                <p>Попробуйте использовать другие параметры для расчёта.</p>
+              </div>
+              <div class="form__third-step visually-hidden">
+                <h3>Шаг 3. Оформление заявки</h3>
+                <ul class="list form__list">
+                  <li class="list__item form__list-item form__list-item--number">
+                    <h4>№ 0010</h4>
+                    <span>Номер заявки</span>
+                  </li>
+                  <li class="list__item form__list-item form__list-item--goal">
+                    <h4>Ипотека</h4>
+                    <span>Цель кредита</span>
+                  </li>
+                  <li class="list__item form__list-item form__list-item--sum">
+                    <h4>Стоимость недвижимости</h4>
+                    <span>2 000 000 рублей</span>
+                  </li>
+                  <li class="list__item form__list-item form__list-item--initial">
+                    <h4>200 000 рублей</h4>
+                    <span>Первоначальный взнос</span>
+                  </li>
+                  <li class="list__item form__list-item form__list-item--years">
+                    <h4>5 лет</h4>
+                    <span>Срок кредитования</span>
+                  </li>
+                </ul>
+                <label class="visually-hidden" for="client-name">Фамилия, Имя, Отчество</label>
+                <input type="text" name="client-name" id="client-name" placeholder="ФИО">
+                <div class="form__third-step-wrapper">
+                  <label class="visually-hidden" for="number">Номер телефона</label>
+                  <input type="tel" name="client-tel" id="number" placeholder="Телефон" maxlength="18" data-mask="+7(000) 000 00 00">
+
+                  <label class="visually-hidden" for="email">Электронная почта</label>
+                  <input type="email" name="client-email" id="email" placeholder="E-mail">
+                </div>
+                <button type="submit" form="calculator" class="button button--submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+          <section class="divisions" id="divisions">
+            <h2>Отделения Лига Банка</h2>
+            <div class="divisions__checkboxes">
+              <div class="divisions__wrapper checkbox">
+                <input type="checkbox" name="russia" id="russia" value="russia" checked="">
+                <label for="russia">Россия</label>
+              </div>
+              <div class="divisions__wrapper checkbox">
+                <input type="checkbox" name="sng" id="sng" value="SNG" checked="">
+                <label for="sng">СНГ</label>
+              </div>
+              <div class="divisions__wrapper checkbox">
+                <input type="checkbox" name="europe" id="europe" value="europe">
+                <label for="europe">Европа</label>
+              </div>
+            </div>
+            <div class="divisions__map" id="map">
+              <script>
+                var opt = {
+                  center: {lat: 54.037157, lng: 59.967874},
+                  zoom: 3.75,
+                  disableDefaultUI: true,
+                };
+
+                function initMap() {
+                  window.map = new google.maps.Map(document.getElementById('map'), opt);
+
+                  var mapEvent = document.createEvent('Event');
+                  mapEvent.initEvent('map', true, true);
+
+                  document.dispatchEvent(mapEvent);
+                }
+              </script>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__logo-wrapper">
+            <span class="visually-hidden">Логотип</span>
+            <img src="img/Logo.svg" width="152" height="28" alt="Логотип">
+            <p>
+              150015, г. Москва, ул. Московская, д. 32
+              Генеральная лицензия Банка России №1050
+              Ⓒ Лига Банк, 2019
+            </p>
+            <nav class="footer__nav">
+              <ul class="list footer__list">
+                <li class="list__item footer__list-item">
+                  <a class="list__item-link footer__list-item-link" href="#services">Услуги</a>
+                </li>
+                <li class="list__item footer__list-item">
+                  <a class="list__item-link footer__list-item-link" href="#calculator">Рассчитать кредит</a>
+                </li>
+                <li class="list__item footer__list-item">
+                  <a class="list__item-link footer__list-item-link" href="#">Контакты</a>
+                </li>
+                <li class="list__item footer__list-item">
+                  <a class="list__item-link footer__list-item-link" href="#">Задать вопрос</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__wrapper">
+            <div class="footer__contacts-wrapper footer__contacts-wrapper--smartphone">
+              <a href="tel:*0904">*0904</a>
+              <p>Бесплатно для абонентов МТС, Билайн, Мегафон, Теле2</p>
+            </div>
+            <div class="footer__contacts-wrapper footer__contacts-wrapper--phone">
+              <a href="tel:88001112233">8 800 111 22 33</a>
+              <p>Бесплатный для всех городов России</p>
+            </div>
+            <ul class="list footer__socials">
+              <li class="list__item footer__socials-item">
+                <a href="#" class="list__item-link footer__socials-item-link footer__socials-item-link--fb">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg width="9" height="16" viewBox="0 0 9 16">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list__item footer__socials-item">
+                <a href="#" class="list__item-link footer__socials-item-link footer__socials-item-link--ig">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="img/sprite.svg#icon-ig"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list__item footer__socials-item">
+                <a href="#" class="list__item-link footer__socials-item-link footer__socials-item-link--tw">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg width="16" height="13" viewBox="0 0 16 13">
+                    <use xlink:href="img/sprite.svg#icon-tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list__item footer__socials-item">
+                <a href="#" class="list__item-link footer__socials-item-link footer__socials-item-link--yt">
+                  <span class="visually-hidden">Youtube</span>
+                  <svg width="16" height="13" viewBox="0 0 16 13">
+                    <use xlink:href="img/sprite.svg#icon-yt"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <div class="login visually-hidden">
+        <h2 class="visually-hidden">Вход в личный кабинет</h2>
+        <div class="login__wrapper">
+          <span class="visually-hidden">Логотип</span>
+          <img src="img/Logo.svg" width="152" height="28" alt="Логотип">
+          <button class="icon-button icon-button--close">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+        <form class="login__form" id="login-form" action="index.html" method="post">
+          <div class="login__form-wrapper">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" autofocus="">
+          </div>
+          <div class="login__form-wrapper">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+            <button type="button" class="icon-button icon-button--showpass">
+              <span class="visually-hidden">Показать пароль</span>
+            </button>
+            <a class="login__link" href="#">Забыли пароль?</a>
+          </div>
+          <button type="submit" form="login-form" class="button button--submit">Войти</button>
+        </form>
+      </div>
+      <div class="callback visually-hidden">
+        <button class="icon-button icon-button--close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <h2>Спасибо за обращение в наш банк.</h2>
+        <p>Наш менеджер скоро свяжется с вами по указанному номеру телефона.</p>
+      </div>
+      <div class="burger visually-hidden">
+        <ul class="burger__nav">
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Услуги</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Рассчитать кредит</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Контакты</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Задать вопрос</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/script.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIvxg5RscF0EUdLEhgwAvTVzR5fHt4xI&callback=initMap"></script>
+  </body>
+</html>
