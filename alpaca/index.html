@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Меню с альпакой">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Меню</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <svg class="header__logo" width="46" height="46" viewBox="0 0 46 46">
+        <use xlink:href="img/sprite.svg#icon-logo"></use>
+      </svg>
+      <nav class="header__nav menu header__nav--hidden">
+        <ul class="menu__wrapper">
+          <li class="menu__item">
+            <a class="menu__link" href="#"><span>Главная</span></a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--list" href="#"><span>Основное меню</span></a>
+            <ul class="menu__submenu">
+              <li class="menu__item">
+                <a class="menu__link" href="#"><span>Заказать вёрстку</span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"><span>Отправить макет на проверку</span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"><span>Хочу работать у вас</span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--list" href="#"><span>Есть предложение по работе с клиентами</span></a>
+                <ul class="menu__submenu-menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#"><span>У меня есть оффер</span></a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#"><span>Сделать партнёром</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><span>Наши сервисы</span></a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><span>Контакты</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__elements">
+        <a class="header__phone" href="tel:+13212223333">
+          <svg width="18" height="18" viewBox="0 0 18 18">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <span>+1 (321) 222 - 33 - 33</span>
+        </a>
+        <button class="header__burger burger" type="button">
+          <span><i class="visually-hidden">Menu button</i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main"></main>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
