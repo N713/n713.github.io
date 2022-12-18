@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Fonts -->
+  <link rel="preload" href="fonts/Marmelad-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RubikMarkerHatch-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Picturefill -->
+  <script>
+    document.createElement("picture");
+    //Picturefill - http://scottjehl.github.io/picturefill/
+  </script>
+  <title>Modesto Flowers</title>
+</head>
+
+<body class="body">
+  <h1 class="visually-hidden">Modesto Flowers</h1>
+  <div class="top">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <picture class="logo header__logo">
+            <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="98" height="86" alt="Logo">
+          </picture>
+          <nav class="nav header__nav closed">
+            <ul>
+              <li><a href="#">Магазины</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </nav>
+          <a class="tel header__tel" href="tel:+36787547894">+3 67 8754 7894</a>
+          <div class="langs header__langs">
+            <button type="button" class="langs__active">Ru</button>
+            <button type="button">Eng</button>
+          </div>
+          <button type="button" class="enter header__enter">Войти</button>
+          <button type="button" class="make header__make">Создать аккаунт</button>
+          <button type="button" class="burger header__burger">
+            <span class="visually-hidden">Меню</span><i></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="greeting">
+      <div class="wrapper">
+        <div class="greeting__inner">
+          <h2>Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!</h2>
+          <p>Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!</p>
+          <div class="greeting__buttons">
+            <button type="button" class="button">Начать покупать</button>
+            <button type="button" class="button button--gray">Начать продавать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <main class="main">
+    <div class="wrapper">
+      <section class="form main__form">
+        <h2 class="visually-hidden">Форма</h2>
+        <div class="form__text">
+          <h2>Заполните форму и начните развивать свой бизнес прямо сейчас!</h2>
+          <p>
+            Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и корректно! 
+            После подтверждения регистрации вы попадёте в систему, где большинство процессов автоматизированы, 
+            что сэкономит ваше время и деньги!
+          </p>
+        </div>
+        <form class="form__data" method="POST">
+          <div class="form__first">
+            <div class="form__fields">
+              <label for="name">Ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Фролова Александра Васильевна" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields">
+              <label for="company">Название Компании</label>
+              <input type="text" name="company" id="company" placeholder="ООО Атлантика">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="flolovaalexa@com.rur" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields">
+              <label for="tel">Номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="+7 (XXX) - XXX XX XX" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields">
+              <label for="promo">Промокод</label>
+              <input type="text" name="promo" id="promo" placeholder="HGF864">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <button type="button" class="button">Далее</button>
+          </div>
+          <div class="form__second">
+            <div class="form__fields">
+              <label for="password">Пароль</label>
+              <input type="password" name="password" id="password" placeholder="Создайте пароль" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields">
+              <label for="password-repeat">Подтвердите пароль</label>
+              <input type="password" name="password-repeat" id="password-repeat" placeholder="Повторите пароль" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields captcha form__captcha">
+              <span>F</span>
+              <span>4</span>
+              <span>U</span>
+              <span>K</span>
+              <span>6</span>
+            </div>
+            <div class="form__fields form__captcha">
+              <label for="captcha">Введите символы из картинки</label>
+              <input type="text" name="captcha" id="captcha" placeholder="Код из картинки" required="">
+              <span class="none">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#icon-warning"></use>
+                </svg>
+                Passwords must be at least 8 characters
+              </span>
+            </div>
+            <div class="form__fields form__buttons">
+              <button type="button" class="button button--gray">Назад</button>
+              <button type="submit" class="button">Подтвердить</button>
+            </div>
+            <div class="form__fields form__checkbox checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" checked="">
+              <label for="checkbox">Я даю согласие на обработку моих персональных данных и правовых документов</label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <div class="footer__adress">
+          <h2>Наши офисы</h2>
+          <ul>
+            <li>
+              <p>Московский офис</p>
+              <a href="tel:+74552678907">+7 455 267-89-07</a>
+              <p>Берсеневский пер., д. 56, стр. 4,</p>
+              <p>6-й эт., Москва, 567754</p>
+            </li>
+            <li>
+              <p>Ростовский офис</p>
+              <a href="tel:+78788880167">+7 878 888-01-67</a>
+              <p>Буденовский пр-т, д. 84, 6-й эт.,</p>
+              <p>Ростов-на-Дону, 679965</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <h2>Мы в соц сетях</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h2>Свяжитесь с нами</h2>
+          <ul>
+            <li><a class="tel footer__tel" href="tel:+36787547894">+3 67 8754 7894</a></li>
+            <li><a href="mailto:mflowers@flo.com" target="_blank">mflowers@flo.com</a></li>
+            <li>
+              <a href="mailto:mflowers@flo.com" class="button">
+                Написать
+                <svg width="18" height="15" viewBox="0 0 18 15">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        Авторские права 2008-2022 <a href="https://m-flowers.com/" target="_blank">M-flowers.com</a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
