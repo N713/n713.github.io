@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Лакомства для котов">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Fonts -->
+  <link rel="preload" href="fonts/Exo2.0_Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/TrebuchetMS.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/TrebuchetMS_Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Picturefill -->
+  <script>
+    document.createElement("picture");
+    //Picturefill - http://scottjehl.github.io/picturefill/
+  </script>
+  <title>FunBox</title>
+</head>
+
+<body class="body">
+  <h1 class="visually-hidden">Funbox</h1>
+  <main class="main">
+    <section class="packs">
+      <div class="wrapper">
+        <h2>Ты сегодня покормил кота?</h2>
+        <ul class="packs__list">
+          <li class="pack packs__pack" tabindex="0">
+            <div class="pack__main">
+              <header class="pack__header">
+                <h3>Сказочное заморское яство</h3>
+              </header>
+              <div class="pack__inner">
+                <div class="pack__info">
+                  <h3>Нямушка</h3>
+                  <b>с фуа-гра</b>
+                  <span><b>10</b> порций</span>
+                  <span>мышь в подарок</span>
+                </div>
+                <div class="pack__weight">
+                  <span>0,5</span>
+                  <span>кг</span>
+                </div>
+                <picture class="pack__image">
+                  <source type="image/webp" srcset="img/cat.webp 1x, img/cat@2x.webp 2x">
+                  <img src="img/cat.png" srcset="img/cat@2x.jpg 2x" width="368" height="360" alt="Cat">
+                </picture>
+              </div>
+            </div>
+            <footer class="pack__footer">
+              <p class="pack__text pack__text--default">Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>
+              <p class="pack__text pack__text--selected">Печень утки разварная с артишоками.</p>
+              <p class="pack__text pack__text--disabled">Печалька, с фуа-гра закончился.</p>
+            </footer>
+          </li>
+          <li class="pack packs__pack" tabindex="0">
+            <div class="pack__main">
+              <header class="pack__header">
+                <h3>Сказочное заморское яство</h3>
+              </header>
+              <div class="pack__inner">
+                <div class="pack__info">
+                  <h3>Нямушка</h3>
+                  <b>с рыбой</b>
+                  <span><b>40</b> порций</span>
+                  <span>2 мыши в подарок</span>
+                </div>
+                <div class="pack__weight">
+                  <span>2</span>
+                  <span>кг</span>
+                </div>
+                <picture class="pack__image">
+                  <source type="image/webp" srcset="img/cat.webp 1x, img/cat@2x.webp 2x">
+                  <img src="img/cat.png" srcset="img/cat@2x.jpg 2x" width="368" height="360" alt="Cat">
+                </picture>
+              </div>
+            </div>
+            <footer class="pack__footer">
+              <p class="pack__text pack__text--default">Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>
+              <p class="pack__text pack__text--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+              <p class="pack__text pack__text--disabled">Печалька, с рыбой закончился.</p>
+            </footer>
+          </li>
+          <li class="pack packs__pack" tabindex="0">
+            <div class="pack__main">
+              <header class="pack__header">
+                <h3>Сказочное заморское яство</h3>
+              </header>
+              <div class="pack__inner">
+                <div class="pack__info">
+                  <h3>Нямушка</h3>
+                  <b>с курой</b>
+                  <span><b>100</b> порций</span>
+                  <span>5 мыши в подарок</span>
+                  <span>заказчик доволен</span>
+                </div>
+                <div class="pack__weight">
+                  <span>5</span>
+                  <span>кг</span>
+                </div>
+                <picture class="pack__image">
+                  <source type="image/webp" srcset="img/cat.webp 1x, img/cat@2x.webp 2x">
+                  <img src="img/cat.png" srcset="img/cat@2x.jpg 2x" width="368" height="360" alt="Cat">
+                </picture>
+              </div>
+            </div>
+            <footer class="pack__footer">
+              <p class="pack__text pack__text--default">Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>
+              <p class="pack__text pack__text--selected">Филе из цыплят с трюфелями в бульоне.</p>
+              <p class="pack__text pack__text--disabled">Печалька, с курой закончился.</p>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
