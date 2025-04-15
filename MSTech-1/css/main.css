@@ -621,7 +621,7 @@ form label[for="checkbox"] {
     }
 
     .header__wrapper {
-        padding: 0 calc(var(--padding-1) * 2);
+        padding: 0;
     }
 
     .logo p {
