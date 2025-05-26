@@ -43,6 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.roulette button').addEventListener('click', () => {
         document.querySelector('.roulette__in img').classList.toggle('rotated');
+        setTimeout(() => {
+            document.location.replace('https://spnk8.com/?authModal=reg');
+        }, 3000);
     });
 
     const langButton = document.querySelector('.land__glob_img');
