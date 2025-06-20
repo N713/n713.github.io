@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Visual Team Test">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <link rel="preload" href="fonts/CoFoSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CoFoSans-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MabryPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MabryPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CoFoSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CoFoSans-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MabryPro-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MabryPro-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+    //Author recommendation - http://scottjehl.github.io/picturefill/
+  </script>
+
+  <title>Company</title>
+</head>
+
+<body class="body">
+  <div class="body__inner">
+    <h1 class="visually-hidden">Company</h1>
+
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <svg class="header__logo" width="200" height="60" viewbox="0 0 200 60">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+        <nav class="header__nav hidden">
+          <ul class="header__menu">
+            <li class="header__item"><a class="header__link" href="#">Professions</a></li>
+            <li class="header__item"><a class="header__link" href="#">Online education</a></li>
+            <li class="header__item"><a class="header__link" href="#">Schools</a></li>
+            <li class="header__item"><a class="header__link" href="#">Support</a></li>
+          </ul>
+          <ul class="header__buttons">
+            <li class="header__button"><a class="button button--white header__button-link" href="#">See institutions</a>
+            </li>
+            <li class="header__button"><a class="button button--black header__button-link" href="#">Leave</a></li>
+          </ul>
+        </nav>
+        <button class="burger header__burger">
+          <strong class="visually-hidden">Menu</strong>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="info">
+        <div class="info__text">
+          <a href="#" class="info__quiz">
+            <svg class="header__logo" width="18" height="18" viewbox="0 0 18 18">
+              <use xlink:href="img/sprite.svg#hat"></use>
+            </svg>
+            <span>Answer five questions</span>
+          </a>
+          <h2 class="info__header">A single platform for searching educational</h2>
+          <a href="tel:+79992532525" class="info__tel">+7 (999) 253 25 25</a>
+          <p class="info__paragraph">We have an extensive database of universities</p>
+          <a href="#" class="button info__button">Leave</a>
+        </div>
+        <div class="info__image">
+          <picture>
+            <source srcset="img/main.avif 1x, img/main@2x.avif 2x" type="image/avif">
+            <source srcset="img/main.webp 1x, img/main@2x.webp 2x" type="image/webp">
+            <img src="img/main.png" srcset="img/main.png 1x, img/main@2x.png 2x" width="1164" height="722" alt="Описание изображения">
+          </picture>
+        </div>
+      </section>
+      <section class="apply">
+        <div class="wrapper apply__wrapper">
+          <div class="apply__text">
+            <h2 class="apply__header">How to apply</h2>
+            <p class="apply__paragraph">
+              We have an extensive database of universities, including admission requirements, available majors and
+              degree
+              programs. Thanks to this, we can accurately <a href="#">determine your place</a> in the university and
+              guarantee your
+              admission.
+            </p>
+            <p class="apply__paragraph">
+              We have an extensive database of universities, including admission requirements, available majors and
+              degree
+              programs
+            </p>
+            <a href="#" class="button apply__button">See institutions</a>
+          </div>
+          <div class="apply__inner">
+            <div class="swiper">
+              <ul class="apply__list swiper-wrapper">
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-1.avif 1x, img/item-1@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-1.webp 1x, img/item-1@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-1.png" srcset="img/item-1.png 1x, img/item-1@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">Sending to the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-2.avif 1x, img/item-2@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-2.webp 1x, img/item-2@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-2.png" srcset="img/item-2.png 1x, img/item-2@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">We select the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-3.avif 1x, img/item-3@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-3.webp 1x, img/item-3@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-3.png" srcset="img/item-3.png 1x, img/item-3@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">Sending to the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-1.avif 1x, img/item-1@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-1.webp 1x, img/item-1@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-1.png" srcset="img/item-1.png 1x, img/item-1@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">Sending to the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-2.avif 1x, img/item-2@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-2.webp 1x, img/item-2@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-2.png" srcset="img/item-2.png 1x, img/item-2@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">We select the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+                <li class="apply__list-item swiper-slide">
+                  <picture>
+                    <source srcset="img/item-3.avif 1x, img/item-3@2x.avif 2x" type="image/avif">
+                    <source srcset="img/item-3.webp 1x, img/item-3@2x.webp 2x" type="image/webp">
+                    <img class="apply__list-image" src="img/item-3.png" srcset="img/item-3.png 1x, img/item-3@2x.png 2x" width="320" height="275" alt="Описание изображения">
+                  </picture>
+                  <div class="apply__list-wrapper">
+                    <a href="#" class="apply__list-answer">Answer five questions</a>
+                    <h3 class="apply__list-header">Sending to the university</h3>
+                    <a class="apply__list-tel" href="tel:+79992532525">+7 (999) 253 25 25</a>
+                    <a href="#" class="link apply__link">More</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev" tabindex="1">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 13L0.999999 6.8M0.999999 6.8L6 1M0.999999 6.8L15 6.8" stroke="black" stroke-width="1.5"></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next" tabindex="1">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 13L0.999999 6.8M0.999999 6.8L6 1M0.999999 6.8L15 6.8" stroke="black" stroke-width="1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
